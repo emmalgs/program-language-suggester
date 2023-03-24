@@ -24,6 +24,7 @@ function langInfo(lang) {
     const resultLang = document.querySelector("#lang");
     const resultLinks = document.querySelector("#links");
     const links = document.createElement("a");
+    const links2 = document.createElement("a");
     links.setAttribute("id", "info")
     document.querySelector("#overlay").setAttribute("class", "behind");
 
@@ -32,6 +33,9 @@ function langInfo(lang) {
         links.setAttribute("href", "https://exercism.org/tracks/csharp");
         links.innerText = "Exercism.org";
         resultLinks.append(links);
+        links2.setAttribute("href", "https://www.learnhowtoprogram.com/c-and-net");
+        links2.innerText = "Epicodus' C# and .NET track"
+        resultLinks.append(links2)
     } else if (lang === "Python") {
         resultLang.innerText = "Python";
         links.setAttribute("href", "https://cs50.harvard.edu/python/2022/weeks/0/");
