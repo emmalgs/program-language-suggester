@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=Josefin+Sans:ital,wght@0,300;0,700;1,300&family=Montserrat:ital,wght@0,400;0,700;1,200&family=Unbounded:wght@300;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #312e81;
+    --highlight-color: #facc15;
+    --neutral-color: #a3a3a3;
+    --highlight-color2: #4ade80;
+    --font: Montserrat, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--font);
+}
+
+h1 {
+    font-style: italic;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4 {
+    text-transform: uppercase;
+    text-align: center;
+    width: 300px;
+    margin: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.hidden {
+    display: none;
+}
