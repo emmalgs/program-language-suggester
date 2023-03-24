@@ -12,7 +12,7 @@
 
 ## Description
 
-An app that allows you to select from three different categories--vegetable, hat, and bug--to see the next programming language you should learn. The suggestion even includes some links to help you get started on your programming journey!
+An app that allows you to select from three different categories--vegetable, hat, and bug--to see the next programming language you should learn. The suggestion even includes some links to help you get started on your programming journey! As you build up your preferences watch the little drawing change.
 
 ## Setup/Installation Requirements
 
