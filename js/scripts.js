@@ -1,7 +1,6 @@
 // UI Logic
 function userInput(e) {
     e.preventDefault();
-    resultReset()
     const veg = document.querySelector("input[name='veg']:checked").value;
     const hat = document.querySelector("input[name='hat']:checked").value;
     const bug = document.querySelector("input[name='bug']:checked").value;
@@ -67,9 +66,7 @@ function langPicker(veg, hat, bug) {
     };
 }
 
-
-
-
 window.addEventListener("load", () => {
     document.querySelector("form").addEventListener("submit", userInput);
+    document.querySelector("#exit").addEventListener("click", resultReset)
 });
