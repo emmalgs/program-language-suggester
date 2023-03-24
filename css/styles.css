@@ -5,8 +5,9 @@
 }
 
 :root {
-    --main-color: #312e81;
-    --highlight-color: #facc15;
+    --main-color: black;
+    --main-highlight: #1d4ed8;
+    --highlight-color: #fef08a;
     --neutral-color: #a3a3a3;
     --highlight-color2: #4ade80;
     --font: Montserrat, Helvetica, sans-serif;
@@ -14,6 +15,16 @@
 
 body {
     font-family: var(--font);
+    color: var(--main-color);
+}
+
+#overlay {
+    z-index: -1;
+}
+
+.behind {
+    background-color: var(--neutral-color);
+    opacity: 50%;
 }
 
 h1 {
@@ -27,6 +38,7 @@ h4 {
     text-align: center;
     width: 350px;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 form {
@@ -34,6 +46,7 @@ form {
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    z-index: -1;
 }
 
 .question {
@@ -45,12 +58,14 @@ form {
     background-color: var(--highlight-color);
     padding: 15px;
     border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--neutral-color);
 }
 
 .q-num {
     font-size: 70px;
     padding: 20px;
     align-self: center;
+    width: 80px;
 }
 
 .q-title {
@@ -71,16 +86,47 @@ form {
     padding: 8px;
     margin: 8px;
     font-size: 20px;
+    align-self: flex-start
 }
 
-label {
+.option {
     padding: 4px;
 }
 
-input[type='radio']:checked {
+input[type='radio']:checked+label {
+    color: var(--main-highlight);
+    font-weight:bold;
+}
+
+button {
+    background-color: var(--highlight-color2);
+    font-size: 30px;
+    font-family: var(--font);
+    font-weight: bold;
+    height: 80px;
+    width: 85px;
+    border-radius: 50%;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: var(--main-highlight);
     color: var(--highlight-color2)
 }
 
 .hidden {
     display: none;
+}
+
+#results {
+    background-color: var(--highlight-color2);
+    width: 400px;
+    height: 400px;
+    padding: 15px;
+    z-index: 1;
+    position: fixed;
+    top: 30%;
+    left: 35%;
 }
