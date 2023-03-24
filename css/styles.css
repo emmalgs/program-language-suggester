@@ -39,8 +39,6 @@ h1 {
 h4 {
     text-transform: uppercase;
     text-align: center;
-    width: 550px;
-    margin: auto;
     margin-bottom: 40px;
 }
 
@@ -152,4 +150,19 @@ button#exit {
 #results h3 {
     text-align: center;
     font-size: 80px;
+}
+
+@media screen and (max-width: 850px) {
+    .forms {
+        flex-direction: column;
+    }
+    #results {
+        width: 400px;
+        height: 450px;
+        top: 15%;
+        left: 22%;
+    }
+    #results h2 {
+        font-size: 20px;
+    }
 }
