@@ -35,11 +35,31 @@ function langInfo(lang) {
 
 function picInsert(pic) {
     const vegDisplay = document.querySelector("#img-veggie")
+    const hatDisplay = document.querySelector("#img-hats")
+    const bugDisplay = document.querySelector("#img-bugs")
 
     if (pic === "corn") {
         vegDisplay.setAttribute("src", "../images/corn.png")
     } else if (pic === "carrot") {
         vegDisplay.setAttribute("src", "../images/carrot.png")
+    } else if (pic === "lettuce") {
+        vegDisplay.setAttribute("src", "../images/lettuce.png")
+    }
+
+    if (pic === "fedora") {
+        hatDisplay.setAttribute("src", "../images/fedora.png")
+    } else if (pic === "straw-hat") {
+        hatDisplay.setAttribute("src", "../images/straw-hat.png")
+    } else if (pic === "cap") {
+        hatDisplay.setAttribute("src", "../images/cap.png")
+    }
+
+    if (pic === "beetle") {
+        bugDisplay.setAttribute("src", "../images/beetle.png")
+    } else if (pic === "cricket") {
+        bugDisplay.setAttribute("src", "../images/cricket.png")
+    } else if (pic === "bee") {
+        bugDisplay.setAttribute("src", "../images/bee.png")
     }
 }
 
@@ -111,5 +131,6 @@ function picPicker() {
 window.addEventListener("load", () => {
     document.querySelector("form").addEventListener("submit", userInput);
     document.querySelector("#exit").addEventListener("click", resultReset);
-    document.querySelector("input").addEventListener("click", picPicker);
+    const drawings = document.querySelectorAll("input")
+    drawings.forEach(drawing => drawing.addEventListener("click", picPicker));
 });

@@ -139,6 +139,7 @@ button:hover {
 
 #pics img {
     width: 500px;
+    position: absolute;
 }
 
 .hidden {
