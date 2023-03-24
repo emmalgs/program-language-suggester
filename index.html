@@ -15,6 +15,14 @@
     <h4>Answer the questions to find out which programming language you align with</h4>
     <form>
         <div class="forms">
+            <div class="name-age">
+                <label for="name">Your Name:
+                    <input type="text" name="name" id="name">
+                </label>
+                <label for="age">Your Age:
+                    <input type="number" name="age" id="age">
+                </label>
+            </div>
         <div class="question q1"> 
             <div class="q-num">1.</div>
             <div class="q-body">
@@ -80,13 +88,14 @@
         <button type="submit">Go!</button>
     </form>
     <div id="pics">
-        <img id="img-veggie" src="" alt="">
-        <img id="img-hats" src="" alt="">
-        <img id="img-bugs" src="" alt="">
+        <img id="img-veggie" src="../images/corn.png" alt="drawing of vegetable option">
+        <img id="img-hats" src="../images/fedora.png" alt="drawing of hat option">
+        <img id="img-bugs" src="../images/beetle.png" alt="drawing of bug option">
     </div>
     </div> 
     <div id="results" class="hidden">
         <button id="exit">&#10005</button>
+        <h2><span id="user-info"></span></h2>
         <h2>You're next language is:</h2>
         <h3><span id="lang"></span></h3>
         <p>Good luck!</p>
