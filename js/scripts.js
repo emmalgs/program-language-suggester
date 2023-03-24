@@ -51,27 +51,27 @@ function picInsert(pic) {
     const bugDisplay = document.querySelector("#img-bugs")
 
     if (pic === "corn") {
-        vegDisplay.setAttribute("src", "main/images/corn.png")
+        vegDisplay.setAttribute("src", "./images/corn.png")
     } else if (pic === "carrot") {
-        vegDisplay.setAttribute("src", "main/images/carrot.png")
+        vegDisplay.setAttribute("src", "./images/carrot.png")
     } else if (pic === "lettuce") {
-        vegDisplay.setAttribute("src", "main/images/lettuce.png")
+        vegDisplay.setAttribute("src", "./images/lettuce.png")
     }
 
     if (pic === "fedora") {
-        hatDisplay.setAttribute("src", "main/images/fedora.png")
+        hatDisplay.setAttribute("src", "./images/fedora.png")
     } else if (pic === "straw-hat") {
-        hatDisplay.setAttribute("src", "main/images/straw-hat.png")
+        hatDisplay.setAttribute("src", "./images/straw-hat.png")
     } else if (pic === "cap") {
         hatDisplay.setAttribute("src", "main/images/cap.png")
     }
 
     if (pic === "beetle") {
-        bugDisplay.setAttribute("src", "main/images/beetle.png")
+        bugDisplay.setAttribute("src", "./images/beetle.png")
     } else if (pic === "cricket") {
-        bugDisplay.setAttribute("src", "main/images/cricket.png")
+        bugDisplay.setAttribute("src", "./images/cricket.png")
     } else if (pic === "bee") {
-        bugDisplay.setAttribute("src", "main/images/bee.png")
+        bugDisplay.setAttribute("src", "./images/bee.png")
     }
 }
 
