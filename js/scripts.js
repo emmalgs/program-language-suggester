@@ -13,6 +13,7 @@ function langInfo(lang) {
     const resultLinks = document.querySelector("#links");
     const links = document.createElement("a");
     links.setAttribute("id", "info")
+    document.querySelector("#overlay").setAttribute("class", "behind");
 
     if (lang === "C#") {
         resultLang.innerText = "C#";
@@ -36,6 +37,7 @@ function resultReset() {
     document.querySelector("#results").setAttribute("class", "hidden")
     document.querySelector("#lang").innerText = ''
     document.querySelector("#links").innerText = ''
+    document.querySelector("#overlay").removeAttribute("class")
     const link = document.querySelector("#info");
     if (link) {
         link.remove()

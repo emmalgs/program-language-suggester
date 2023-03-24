@@ -7,15 +7,18 @@
 :root {
     --main-color: black;
     --main-highlight: #1d4ed8;
-    --highlight-color: #fef08a;
+    --highlight-color: #fecaca;
     --neutral-color: #a3a3a3;
     --highlight-color2: #4ade80;
+    --background: #fffbeb;
     --font: Montserrat, Helvetica, sans-serif;
 }
 
 body {
     font-family: var(--font);
     color: var(--main-color);
+    background-color: var(--background);
+    padding: 40px;
 }
 
 #overlay {
@@ -23,7 +26,6 @@ body {
 }
 
 .behind {
-    background-color: var(--neutral-color);
     opacity: 50%;
 }
 
@@ -123,12 +125,12 @@ button:hover {
 #results {
     background-color: var(--highlight-color2);
     width: 500px;
-    height: 400px;
+    height: 500px;
     padding: 30px;
     z-index: 1;
     position: fixed;
-    top: 30%;
-    left: 35%;
+    top: 20%;
+    left: 30%;
     border-radius: 20px;
 }
 
@@ -139,4 +141,9 @@ button#exit {
     text-align: center;
     padding: 3px;
     float: right;
+}
+
+#results h3 {
+    text-align: center;
+    font-size: 80px;
 }
