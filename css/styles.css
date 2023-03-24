@@ -7,7 +7,7 @@
 :root {
     --main-color: black;
     --main-highlight: #1d4ed8;
-    --highlight-color: #fecaca;
+    --highlight-color: #fed7aa;
     --neutral-color: #a3a3a3;
     --highlight-color2: #4ade80;
     --background: #fffbeb;
@@ -33,22 +33,27 @@ h1 {
     font-style: italic;
     text-transform: uppercase;
     text-align: center;
+    font-size: 50px;
 }
 
 h4 {
     text-transform: uppercase;
     text-align: center;
-    width: 350px;
+    width: 550px;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
+.forms {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
 form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
     align-items: center;
-    z-index: -1;
+    gap: 30px;
 }
 
 .question {
@@ -56,7 +61,7 @@ form {
     gap: 10px;
     height: 200px;
 
-    width: 400px;
+    width: 350px;
     background-color: var(--highlight-color);
     padding: 15px;
     border-radius: 20px;
@@ -68,11 +73,12 @@ form {
     padding: 20px;
     align-self: center;
     width: 80px;
+    opacity: 70%;
 }
 
 .q-title {
     align-self: center;
-    font-size: 24px;
+    font-size: 20px;
     font-style: italic;
 }
 
