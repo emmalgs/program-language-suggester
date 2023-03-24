@@ -15,7 +15,7 @@ function userInfoInsert(name, age) {
     const nameDisplay = document.querySelector("#user-info")
     if (age > 50) {
         nameDisplay.innerText = `Never too late to learn, ${name}!`
-    } else if (age < 20) {
+    } else if (age < 20 && age > 0) {
         nameDisplay.innerText = `Never too early to start learning, ${name}!`
     } else { nameDisplay.innerText = `Perfect time in life to start learning, ${name}!` }
 }
@@ -76,10 +76,13 @@ function picInsert(pic) {
 }
 
 function resultReset() {
-    document.querySelector("#results").setAttribute("class", "hidden")
-    document.querySelector("#lang").innerText = ''
-    document.querySelector("#links").innerText = ''
-    document.querySelector("#overlay").removeAttribute("class")
+    document.querySelector("#results").setAttribute("class", "hidden");
+    document.querySelector("#lang").innerText = '';
+    document.querySelector("#links").innerText = '';
+    document.querySelector("#overlay").removeAttribute("class");
+    document.querySelector("#name").value = '';
+    document.querySelector("#age").value = undefined;
+
     const link = document.querySelector("#info");
     if (link) {
         link.remove()

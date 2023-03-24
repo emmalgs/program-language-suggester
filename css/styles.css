@@ -127,8 +127,12 @@ input[type="number"] {
 
 .option {
     padding: 4px;
+    
 }
 
+input[type="radio"] {
+    cursor: pointer;
+}
 input[type='radio']:checked+label {
     color: var(--main-highlight);
     font-weight:bold;
