@@ -33,6 +33,16 @@ function langInfo(lang) {
     } else { resultLang.innerText = "Hmmm...maybe try again" }
 }
 
+function picInsert(pic) {
+    const vegDisplay = document.querySelector("#img-veggie")
+
+    if (pic === "corn") {
+        vegDisplay.setAttribute("src", "../images/corn.png")
+    } else if (pic === "carrot") {
+        vegDisplay.setAttribute("src", "../images/carrot.png")
+    }
+}
+
 function resultReset() {
     document.querySelector("#results").setAttribute("class", "hidden")
     document.querySelector("#lang").innerText = ''
@@ -68,7 +78,38 @@ function langPicker(veg, hat, bug) {
     };
 }
 
+function picPicker() {
+    const veg = document.querySelector("input[name='veg']:checked").value;
+    const hat = document.querySelector("input[name='hat']:checked").value;
+    const bug = document.querySelector("input[name='bug']:checked").value;
+
+    if (veg === "corn") {
+        picInsert("corn")
+    } else if (veg === "carrot") {
+        picInsert("carrot")
+    } else if (veg === "lettuce") {
+        picInsert("lettuce")
+    }
+
+    if (hat === "fedora") {
+        picInsert("fedora")
+    } else if (hat === "straw-hat") {
+        picInsert("straw-hat")
+    } else if (hat === "cap") {
+        picInsert("cap")
+    }
+
+    if (bug === "beetle") {
+        picInsert("beetle")
+    } else if (bug === "cricket") {
+        picInsert("cricket")
+    } else if (bug === "bee") {
+        picInsert("bee")
+    }
+}
+
 window.addEventListener("load", () => {
     document.querySelector("form").addEventListener("submit", userInput);
-    document.querySelector("#exit").addEventListener("click", resultReset)
+    document.querySelector("#exit").addEventListener("click", resultReset);
+    document.querySelector("input").addEventListener("click", picPicker);
 });
