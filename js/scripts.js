@@ -4,8 +4,20 @@ function userInput(e) {
     const veg = document.querySelector("input[name='veg']:checked").value;
     const hat = document.querySelector("input[name='hat']:checked").value;
     const bug = document.querySelector("input[name='bug']:checked").value;
+    const name = document.querySelector("#name").value;
+    const age = document.querySelector("#age").value;
     document.querySelector("#results").removeAttribute("class")
     langPicker(veg, hat, bug);
+    userInfoInsert(name, age)
+}
+
+function userInfoInsert(name, age) {
+    const nameDisplay = document.querySelector("#user-info")
+    if (age > 50) {
+        nameDisplay.innerText = `Never too late to learn, ${name}!`
+    } else if (age < 20) {
+        nameDisplay.innerText = `Never too early to start learning, ${name}!`
+    } else { nameDisplay.innerText = `Perfect time in life to start learning, ${name}!` }
 }
 
 function langInfo(lang) {
