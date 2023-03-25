@@ -63,7 +63,7 @@ function picInsert(pic) {
     } else if (pic === "straw-hat") {
         hatDisplay.setAttribute("src", "./images/straw-hat.png")
     } else if (pic === "cap") {
-        hatDisplay.setAttribute("src", "main/images/cap.png")
+        hatDisplay.setAttribute("src", "./images/cap.png")
     }
 
     if (pic === "beetle") {
